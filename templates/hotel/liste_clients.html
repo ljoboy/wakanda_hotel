@@ -1,0 +1,80 @@
+{% extends "base_hotel.html" %}
+{% block title %}Liste des clients{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-9"><h1>Liste des clients :</h1></div>
+            <div class="col-md-3">
+                <div class="md-form">
+                    <i class="fa fa-search prefix"></i>
+                    <input type="text" id="client_search" class="form-control">
+                    <label for="client_search">Chercher</label>
+                </div>
+            </div>
+        </div>
+		<table class="table">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Postnom</th>
+                        <th>Email</th>
+                        <th>Téléphone</th>
+                        <th>Nationalité</th>
+                        <th>Profession</th>
+                        <th>Sexe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for client in clients %}
+                    <tr>
+                        <th scope="row">{{ loop.index }}</th>
+                        <td>{{ client[1] }}</td>
+                        <td>{{ client[2] }}</td>
+                        <td>{{ client[3] }}</td>
+                        <td>{{ client[4] }}</td>
+                        <td>{{ client[5] }}</td>
+                        <td>{{ client[6] }}</td>
+                        <td>{{ client[7] }}</td>
+                        <td>{{ client[8] }}</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-user"></i></a>
+                            <a class="teal-text" href="/hotel/modif_client/{{ client[0]|string }}"><i class="fa fa-pencil"></i></a>
+                            <a class="red-text"><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+
+
+            
+                </tbody>
+            </table>            
+	</div>
+</div>
+{% endblock %}
+{% block script %}
+    <script>
+        $("#client_search").keyup(function() {
+            var value = this.value;
+
+            $("table").find("tr").each(function(index) {
+                if (index === 0) return;
+
+                var if_td_has = false; //boolean value to track if td had the entered key
+                $(this).find('td').each(function () {
+                    if_td_has = if_td_has || $(this).text().indexOf(value) !== -1; //Check if td's text matches key and then use OR to check it for all td's
+                });
+
+                $(this).toggle(if_td_has);
+
+            });
+        });
+    </script>
+{% endblock %}

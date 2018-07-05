@@ -1,0 +1,29 @@
+{% extends "base_hotel.html" %}
+{% block title %}Enregistrer un nouveau client{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <div class="row">
+            <div class="md-offset-2 col-md-8">
+                <form action="/hotel/modif_client" method="post" accept-charset="UTF-8">
+                    <input title="nom" name="nom" type="text" value="{{ client[1] }}">
+                    <input title="prenom" name="prenom" type="text" value="{{ client[3] }}">
+                    <input title="postnom" name="postnom" type="text" value="{{ client[2] }}">
+                    <input title="email" name="email" type="email" value="{{ client[4] }}">
+                    <input title="phone" name="phone" type="tel" value="{{ client[5] }}">
+                    <input title="nationalite" name="nationalite" type="text" value="{{ client[6] }}">
+                    <input title="profession" name="profession" type="text" value="{{ client[7] }}">
+                    <input title="m" name="sexe" type="text" value="{{ client[8] }}">
+                    <input type="hidden" name="id" value="{{ id_client }}" value="{{ client[9] }}">
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+	</div>
+</div>
+{% endblock %}

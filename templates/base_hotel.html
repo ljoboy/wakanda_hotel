@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% block head %}
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>{% block title %}{% endblock %} - Wakanda</title>
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/icon/Hotel_96px.png')}}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="{{url_for('static',filename='images/icon/Hotel_96px.png')}}" sizes="any" />
+    <style>
+        main{
+            padding: 1.3em;
+        }
+    </style>
+    {% endblock %}
+</head>
+<body class="fixed-sn mdb-skin" data-spy="scroll" data-target="#scrollspy" data-offset="15">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark double-nav  fixed-top scrolling-navbar">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="breadcrumb-dn mr-auto">
+                <p>WAKANDA HOTEL</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <i class="fa fa-envelope"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Paramètres</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Mon compte</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Mon compte</a>
+                        <a class="dropdown-item" href="#">Mes stats</a>
+                        <hr/>
+                        <a class="dropdown-item" href="#">Déconnexion</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="slide-out" class="side-nav sn-bg-4 mdb-sidenav fixed">
+            <ul class="custom-scrollbar list-unstyled" style="max-height:100vh;">
+                <li class="logo-sn waves-effect">
+                    <div class=" text-center">
+                        <a href="#" class="pl-0">
+                            <img src="{{url_for('static',filename='images/icon/Hotel_96px.png')}}" class="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <i class="fa fa-users"></i> Clients
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="waves-effect" href="/hotel/add_client">Enregistrer un client</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hotel/all_clients" class="waves-effect">Listes des clients</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <i class="fa fa-home"></i> Chambre
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="/hotel/add_chambre" class="waves-effect">Ajouter Chambre</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hotel/liste_chambres" class="waves-effect">Lister Chambre</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hotel/add_type_chambre" class="waves-effect">Ajouter Type Chambre</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hotel/liste_type" class="waves-effect">Liste type chambre</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r">
+                                <i class="fa fa-eye"></i> A Propos
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="/team" class="waves-effect">&Eacute;quipe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect">Nous contactez</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </main>
+<footer class="page-footer lighten-3 pt-4 mt-4">
+    <div class="container text-center text-md-left">
+        <div class="row my-4">
+            <div class="col-md-4 col-lg-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Footer Content</h5>
+                <p>Here you can use rows and columns here to organize your footer content.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident
+                    voluptate esse quasi, veritatis totam voluptas nostrum. </p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 ml-auto">
+                <h5 class="text-uppercase mb-4 font-weight-bold">About</h5>
+                <ul class="list-unstyled">
+                    <p>
+                        <a href="#!">PROJECTS</a>
+                    </p>
+                    <p>
+                        <a href="#!">ABOUT US</a>
+                    </p>
+                    <p>
+                        <a href="#!">BLOG</a>
+                    </p>
+                    <p>
+                        <a href="#!">AWARDS</a>
+                    </p>
+                </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 col-lg-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Address</h5>
+                <p>
+                    <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p>
+                    <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                <p>
+                    <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p>
+                    <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 text-center">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+                <div class="mt-2">
+                    <a type="button" class="btn-floating btn-small btn-fb">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-small btn-tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-small btn-gplus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-small btn-dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright py-3 text-center">
+        &copy; Copyright 2018 Wakanda Studio | Designed by <a href="https://github.com/ljoboy" target="_blank">Lijerbul LJOBOY</a>
+    </div>
+</footer>
+    <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script>
+    $(".button-collapse").sideNav();
+    let sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
+    </script>
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

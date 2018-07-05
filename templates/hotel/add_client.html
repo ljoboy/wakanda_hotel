@@ -1,0 +1,57 @@
+{% extends "base_hotel.html" %}
+{% block title %}Enregistrer un nouveau client{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block body %}
+    <!--Form with header-->
+    <div class="jumbotron">
+            <form action="/hotel/add_client" method="post" accept-charset="UTF-8">
+            <div class="card">
+            <div class="card-block">
+                <!--Header-->
+                <div class="form-header purple darken-4">
+                    <h3><i class="fa fa-user"></i> Enregistrer un client :</h3>
+                </div>
+                <!--Body-->
+                    <div class="container-fluid">
+
+                        {% for info in infos %}
+                            {% if info[1] != "radio" %}
+                            <div class="md-form">
+                                <i class="fa fa-pencil prefix"></i>
+                                <input required title="{{ info[0] }}" id="{{ info[0] }}" class="form-control" name="{{ info[0] }}" type="{{ info[1] }}">
+                                <label for="{{ info[0] }}">Votre {{ info[0] }}</label>
+                            </div>
+                            {% else %}
+                                <div class="form-inline">
+                                    <fieldset class="form-group">
+                                        <i class="fa fa-male prefix"></i>
+                                        <input name="sexe" type="radio" class="with-gap" id="radio4" value="m" checked>
+                                        <label for="radio4">Masculin</label>
+                                    </fieldset>
+                                    &nbsp;|&nbsp;
+                                    <fieldset class="form-group">
+                                        <i class="fa fa-female prefix"></i>
+                                        <input name="sexe" type="radio" class="with-gap" id="radio5" value="f">
+                                        <label for="radio5">Féminin</label>
+                                    </fieldset>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <div class="options">
+                    <div class="text-xs-center">
+                        <button class="btn btn-lg btn-deep-purple">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <!--/Form with header-->
+{% endblock %}

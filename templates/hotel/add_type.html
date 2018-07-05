@@ -1,0 +1,63 @@
+{% extends "base_hotel.html" %}
+{% block title %}Ajouter le type de chambre{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <form action="/hotel/add_type_chambre" method="post" accept-charset="UTF-8">
+            <!--Form with header-->
+            <div class="card">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header blue-gradient">
+                        <h2><i class="fa fa-home"></i> Ajouter le type d'une chambre :</h2>
+                    </div>
+                    <!--Body-->
+                    <div class="container-fluid">
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix"></i>
+                            <input type="text" name="nom" id="nom" class="form-control" required>
+                            <label for="nom">Le nom du type</label>
+                        </div>
+                        <div class="md-form input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="number" name="prix" class="form-control" aria-label="Prix (en dollar)" title="Prix (en dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix"></i>
+                            <input type="number" name="nbPerso" id="nom" class="form-control" required>
+                            <label for="nom">Le nombre max des personnes</label>
+                        </div>
+                        <!--Textarea with icon prefix-->
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix"></i>
+                            <textarea type="text" name="details" id="form8" class="md-textarea" length="250"></textarea>
+                            <label for="form8">Détails</label>
+                        </div>
+                    <div class="text-xs-center">
+                        <button class="btn btn-indigo btn-lg">Ajouter</button>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/Form with header-->
+        </form>
+
+
+	</div>
+</div>
+    {% block script %}
+        <script>
+         $(document).ready(function() {
+            $('.mdb-select').material_select();
+         });
+        </script>
+    {% endblock %}
+{% endblock %}

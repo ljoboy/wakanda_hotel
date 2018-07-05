@@ -1,0 +1,72 @@
+{% extends "base_hotel.html" %}
+{% block title %}Liste des types des chambres{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-9"><h1>Liste des types des chambres :</h1></div>
+            <div class="col-md-3">
+                <div class="md-form">
+                    <i class="fa fa-search prefix"></i>
+                    <input type="text" id="type_search" class="form-control">
+                    <label for="type_search">Chercher</label>
+                </div>
+            </div>
+        </div>
+		<table class="table">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nom</th>
+                        <th>Prix</th>
+                        <th>Détails</th>
+                        <th>Nombre des personnes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for type in types %}
+                    <tr>
+                        <th scope="row">{{ type[0] }}</th>
+                        <td>{{ type[2] }}</td>
+                        <td>{{ type[1] }}</td>
+                        <td>{% if type[3] != None %}{{ type[3]|capitalize }}{% else %}{{ "Pas de détails" }}{% endif %}</td>
+                        <td>{{ type[4] }}</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-user"></i></a>
+                            <a class="teal-text" href="#"><i class="fa fa-pencil"></i></a>
+                            <a class="red-text"><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+
+
+            
+                </tbody>
+            </table>            
+	</div>
+</div>
+{% endblock %}
+{% block script %}
+    <script>
+        $("#type_search").keyup(function() {
+            var value = this.value;
+
+            $("table").find("tr").each(function(index) {
+                if (index === 0) return;
+
+                var if_td_has = false; //boolean value to track if td had the entered key
+                $(this).find('td').each(function () {
+                    if_td_has = if_td_has || $(this).text().indexOf(value) !== -1; //Check if td's text matches key and then use OR to check it for all td's
+                });
+
+                $(this).toggle(if_td_has);
+
+            });
+        });
+    </script>
+{% endblock %}

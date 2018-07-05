@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Connexion - Wakanda Hotel</title>
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/icon/Hotel_96px.png')}}" type="image/x-icon">
+  <style>
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+
+  @media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 1000px;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 650px;
+    }
+  }
+
+  .top-nav-collapse {
+    background-color: #3f51b5 !important;
+  }
+
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #3f51b5 !important;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #3f51b5 !important;
+    }
+  }
+
+  .rgba-gradient {
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  }
+
+  .card {
+    background-color: rgba(126, 123, 215, 0.2);
+  }
+
+  .md-form label {
+    color: #ffffff;
+  }
+
+  h6 {
+    line-height: 1.7;
+  }
+  </style>
+</head>
+
+<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <strong>WAKANDA Hotel</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hotel">Hotel
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/resto">Restaurant</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="view" style="background-image: url({{url_for('static',filename='images/hotel.jpg')}}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+              <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">WAKANDA HOTEL </h1>
+              <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+              <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga
+              nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea
+              dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+              <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Voir plus</a>
+            </div>
+            <div class="col-md-6 col-xl-5 mb-4">
+              <form method="post" action="index.html" accept-charset="UTF-8" class="card wow fadeInRight" data-wow-delay="0.3s" autocomplete="off">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h3 class="white-text">
+                      <i class="fa fa-user white-text"></i> Connectez-vous :</h3>
+                    <hr class="hr-light">
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-user prefix white-text active"></i>
+                    <input type="text" id="form3" class="white-text form-control">
+                    <label for="form3" class="active">Nom d'utilisateur</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-lock prefix white-text active"></i>
+                    <input type="password" id="form4" class="white-text form-control">
+                    <label for="form4">Mot de passe</label>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button class="btn btn-indigo">Connexion</button>
+                    <hr class="hr-light mb-3 mt-4">
+                    <div class="inline-ul text-center d-flex justify-content-center">
+                      <a class="p-2 m-2 tw-ic">
+                        <i class="fa fa-twitter white-text"></i>
+                      </a>
+                      <a class="p-2 m-2 li-ic">
+                        <i class="fa fa-linkedin white-text"> </i>
+                      </a>
+                      <a class="p-2 m-2 ins-ic">
+                        <i class="fa fa-instagram white-text"> </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="page-footer indigo">
+        <div class="footer-copyright py-3 text-center">
+          &copy; Copyright 2018 Wakanda Studio | Designed by <a href="https://github.com/ljoboy" target="_blank">Lijerbul LJOBOY</a>
+        </div>
+      </footer>
+  </header>
+  <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script>
+  new WOW().init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base_hotel.html" %}
+{% block title %}Reserver une chambre{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <form action="/hotel/reservation" method="post" accept-charset="UTF-8">
+            <!--Form with header-->
+            <div class="card">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header blue-gradient">
+                        <h2><i class="fa fa-home"></i> Reserver une chambre :</h2>
+                    </div>
+                    <!--Body-->
+                    <div class="container-fluid">
+
+                    <!--Blue select-->
+                    <select class="mdb-select colorful-select dropdown-primary">
+
+                        <option value="1">Option 1</option>
+                    </select>
+                    <label>Blue select</label>
+                    <!--/Blue select-->
+
+                    <div class="text-xs-center">
+                        <button class="btn btn-indigo btn-lg">Ajouter</button>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/Form with header-->
+        </form>
+
+
+	</div>
+</div>
+    {% block script %}
+        <script>
+         $(document).ready(function() {
+            $('.mdb-select').material_select();
+         });
+        </script>
+    {% endblock %}
+{% endblock %}
