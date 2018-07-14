@@ -24,8 +24,8 @@ def add_client():
     if request.method == 'GET':
         infos = [("nom", "text"), ("prenom", "text"), ("postnom", "text"), ("email", "email"), ("téléphone", "tel"), ("nationalite", "text"), ("profession", "text"), ("sexe", "radio")]
         return render_template('hotel/add_client.html', infos=infos)
-    else:
-        ajouter_client(request.values.get("nom"),request.values.get("postnom"),request.values.get("prenom"),request.values.get("email"),request.values.get("phone"),request.values.get("nationalite"),request.values.get("profession"),request.values.get("sexe"))
+    elif request.method == 'POST':
+        ajouter_client(request.values.get("nom"),request.values.get("postnom"),request.values.get("prenom"),request.values.get("email"),request.values.get("téléphone"),request.values.get("nationalite"),request.values.get("profession"),request.values.get("sexe"))
         return redirect("/hotel/all_clients")
 
 
@@ -43,7 +43,7 @@ def modif_client(client_id):
             return render_template("hotel/modif_client.html", client=client, id_client=client_id)
     elif request.method == 'POST':
         modifier_client(request.values.get("id"), request.values)
-    redirect("hotel/all_client")
+    return redirect("hotel/all_client")
 
 
 @app.route("/hotel/add_chambre", methods=['GET', 'POST'])
@@ -85,7 +85,8 @@ def reservation():
         return render_template("hotel/reservation.html", chambres=chambres, clients=clients)
     elif request.method == 'POST':
         ajouter_reservation(request.values.get("id_client"), request.values.get("id_chambre"), request.values.get("check_in"), request.values.get("check_out"), request.values.get("prix"), request.values.get("details"))
-    redirect("/hotel")
+        indispo_chambre(request.values.get("id_chambre"))
+    return redirect("/hotel")
 
 
 @app.route("/resto")

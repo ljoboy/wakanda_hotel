@@ -19,15 +19,41 @@
                     </div>
                     <!--Body-->
                     <div class="container-fluid">
-
-                    <!--Blue select-->
-                    <select class="mdb-select colorful-select dropdown-primary">
-
-                        <option value="1">Option 1</option>
-                    </select>
-                    <label>Blue select</label>
-                    <!--/Blue select-->
-
+                    <div class="md-form">
+                        <!--Blue select-->
+                        <select name="id_client" class="mdb-select colorful-select dropdown-primary">
+                            {% for client in clients %}
+                                <option value="{{ client[0] }}">{{ client[1]|upper }} {{ client[2]|upper }} {{ client[3]|capitalize }}</option>
+                            {% endfor %}
+                        </select>
+                        <label>Choisissez le client</label>
+                        <!--/Blue select-->
+                    </div>
+                    <div class="md-form">
+                        <!--Blue select-->
+                        <select name="id_chambre" class="mdb-select colorful-select dropdown-primary">
+                            {% for chambre in chambres %}
+                                <option value="{{ chambre[0] }}">N° {{ chambre[0]|upper }} - Nom : {{ chambre[2]|capitalize }}</option>
+                            {% endfor %}
+                        </select>
+                        <label>Choisissez la chambre</label>
+                        <!--/Blue select-->
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-calendar prefix"></i>
+                        <input name="check_in" placeholder="S&eacute;lectionner la date d'arrivée" type="text" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date d'arrivée</label>
+                    </div>
+                        <div class="md-form">
+                        <i class="fa fa-calendar prefix"></i>
+                        <input name="check_out" placeholder="S&eacute;lectionner la date de sortie" type="text" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date de sortie</label>
+                    </div>
+                    <div class="md-form input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="number" name="prix" class="form-control" aria-label="Prix (en dollar)" title="Prix (en dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
                     <div class="text-xs-center">
                         <button class="btn btn-indigo btn-lg">Ajouter</button>
                     </div>
@@ -46,6 +72,8 @@
          $(document).ready(function() {
             $('.mdb-select').material_select();
          });
+         jQuery.extend(jQuery.fn.pickadate.defaults, {monthsFull: [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ], monthsShort: [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec' ], weekdaysFull: [ 'Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi' ], weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ], today: 'Aujourd\'hui', clear: 'Effacer', close: 'Fermer', firstDay: 1, format: 'dd mmmm yyyy', formatSubmit: 'yyyy/mm/dd', labelMonthNext:"Mois suivant", labelMonthPrev:"Mois précédent", labelMonthSelect:"Sélectionner un mois", labelYearSelect:"Sélectionner une année"});
+jQuery.extend( jQuery.fn.pickatime.defaults, {clear: 'Effacer'});$('.datepicker').pickadate({selectYears: 125, min: [new Date().getFullYear(), new Date().getMonth(), new Date().getDay()]});
         </script>
     {% endblock %}
 {% endblock %}
