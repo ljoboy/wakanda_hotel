@@ -14,7 +14,8 @@ def ajouter_client(nom, postnom, prenom, email, tel, nationalite, profession, se
     cursor = cnx.cursor()
     try:
         cursor.execute("""
-        INSERT INTO client(Nom_client, PostNom_client, Prenom_client, Email_client, Tel_client, Nationalite_client, Profession_client, Sexe_client) VALUES(%s,%s,%s,%s,%s,%s,%s,%s)""",
+        INSERT INTO client(Nom_client, PostNom_client, Prenom_client, Email_client, Tel_client, Nationalite_client,
+        Profession_client, Sexe_client) VALUES(%s,%s,%s,%s,%s,%s,%s,%s)""",
                        (nom, postnom, prenom, email, tel, nationalite, profession, sexe))
         cnx.commit()
     except Exception as e:

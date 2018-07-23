@@ -6,6 +6,7 @@
 </style>
 {% endblock %}
 {% block body %}
+    <meta >
 <div class="jumbotron">
 	<div class="container">
         <form action="/hotel/reservation" method="post" accept-charset="UTF-8">
@@ -31,9 +32,9 @@
                     </div>
                     <div class="md-form">
                         <!--Blue select-->
-                        <select name="id_chambre" class="mdb-select colorful-select dropdown-primary">
+                        <select name="id_chambre" id="id_chambre" class="mdb-select colorful-select dropdown-primary">
                             {% for chambre in chambres %}
-                                <option value="{{ chambre[0] }}">N° {{ chambre[0]|upper }} - Nom : {{ chambre[2]|capitalize }}</option>
+                                <option value="{{ chambre[0] }}" prix="{{ chambre[5] }}">N° {{ chambre[0]|upper }} - Nom : {{ chambre[2]|capitalize }}</option>
                             {% endfor %}
                         </select>
                         <label>Choisissez la chambre</label>
@@ -49,14 +50,9 @@
                         <input name="check_out" placeholder="S&eacute;lectionner la date de sortie" type="text" id="date-picker-example" class="form-control datepicker">
                         <label for="date-picker-example">Date de sortie</label>
                     </div>
-                    <div class="md-form input-group">
-                            <span class="input-group-addon">$</span>
-                            <input type="number" name="prix" class="form-control" aria-label="Prix (en dollar)" title="Prix (en dollar)">
-                            <span class="input-group-addon">.00</span>
-                        </div>
+                        <input type="hidden" name="prix" value="0" id="prix"/>
                     <div class="text-xs-center">
                         <button class="btn btn-indigo btn-lg">Ajouter</button>
-                    </div>
                     </div>
 
                 </div>
@@ -68,6 +64,11 @@
 	</div>
 </div>
     {% block script %}
+        <script>
+        $("#id_chambre").onchange(function () {
+            $("#prix").value = $("#id_chambre").prix;
+        });
+        </script>
         <script>
          $(document).ready(function() {
             $('.mdb-select').material_select();

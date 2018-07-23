@@ -21,7 +21,7 @@ def afficher_chambre():
 def chambre_dispo():
     cnx = db_connect()
     cursor = cnx.cursor()
-    cursor.execute("SELECT * FROM chambre WHERE Disponibilite = 1")
+    cursor.execute("SELECT c.*, t.Prix_unitaire FROM chambre As c, type as t WHERE c.Disponibilite = 1 AND t.Id = c.Id_type")
     chambres = cursor.fetchall()
     cnx.commit()
     return chambres
@@ -45,7 +45,7 @@ def chambre_by_type(id_type):
     return chambres
 
 
-def ajouter_reservation(id_client, id_chambre, check_in, check_out, prix, details=""):
+def ajouter_reservation(id_client, id_chambre, check_in, check_out, prix, details="details"):
     cnx = db_connect()
     cursor = cnx.cursor()
     cursor.execute("""INSERT INTO reservation(Id_client, Id_chambre, Check_in, Check_out, Prix, Details)
@@ -74,9 +74,31 @@ def indispo_chambre(id_chambre):
     cnx = db_connect()
     cursor = cnx.cursor()
     cursor.execute("UPDATE chambre SET Disponibilite=0 WHERE Id = %s", id_chambre)
+    cnx.commit()
 
 
 def dispo_chambre(id_chambre):
     cnx = db_connect()
     cursor = cnx.cursor()
     cursor.execute("UPDATE chambre SET Disponibilite=1 WHERE Id = %s", id_chambre)
+    cnx.commit()
+
+
+def prix_total():
+    cnx = db_connect()
+    cursor = cnx.cursor()
+    cursor.execute("SELECT SUM(Prix) FROM reservation")
+    stats = cursor.fetchone()
+    cnx.commit()
+    return stats
+
+
+def total_type(id):
+    cnx = db_connect()
+    cursor = cnx.cursor()
+    cursor.execute("SELECT SUM(t.Prix_unitaire) FROM type As t, chambre As c WHERE t.Id = %s AND c.Id_type = %s AND c.Disponibilite = 0" % (id, id))
+    stats = cursor.fetchone()
+    cnx.commit()
+    return stats
+
+print(total_type(3))

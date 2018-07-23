@@ -1,0 +1,35 @@
+{% extends "base_hotel.html" %}
+{% block title %}Admin{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+        <div class="row">
+        {% for stat in stats %}
+            <div class="text-xs-center">
+                <span class="min-chart" id="stat-{{ stat[1] }}" data-percent="{{ stat[0] }}"><span class="percent"></span></span>
+                <h5><span class="label green">{{ stat[1] }}<i class="fa fa-arrow-circle-up"></i></span></h5>
+            </div>
+        {% endfor %}
+        </div>
+	</div>
+</div>
+    {% block script %}
+        {% for stat in stats %}
+            <script>
+                $(function () {
+                    $('.min-chart#stat-{{ stat[1] }}').easyPieChart({
+                        barColor: "#4caf50",
+                        onStep: function (from, to, percent) {
+                            $(this.el).find('.percent').text(Math.round(percent));
+                        }
+                    });
+                });
+            </script>
+        {% endfor %}
+    {% endblock %}
+{% endblock %}

@@ -84,16 +84,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Accueil
+              <a class="nav-link" href="#">Admin
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/hotel">Hotel
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/resto">Restaurant</a>
             </li>
           </ul>
         </div>
@@ -103,16 +96,14 @@
       <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
         <div class="container">
           <div class="row mt-5">
-            <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-              <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">WAKANDA HOTEL </h1>
+            <div class="col-md-6 mb-5 mt-md-0 mt-5 black-text text-center text-md-left">
+              <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">PROJET WAKANDA </h1>
               <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-              <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga
-              nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea
-              dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+              <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">bienvenue chez nous ,votre repos est notre priorité, notre technologie et votre confort sont à votre disposition.</h6>
               <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Voir plus</a>
             </div>
             <div class="col-md-6 col-xl-5 mb-4">
-              <form method="post" action="index.html" accept-charset="UTF-8" class="card wow fadeInRight" data-wow-delay="0.3s" autocomplete="off">
+              <form method="post" action="{{ url_for('admin') }}" accept-charset="UTF-8" class="card wow fadeInRight" data-wow-delay="0.3s" autocomplete="off">
                 <div class="card-body">
                   <div class="text-center">
                     <h3 class="white-text">
@@ -121,12 +112,12 @@
                   </div>
                   <div class="md-form">
                     <i class="fa fa-user prefix white-text active"></i>
-                    <input type="text" id="form3" class="white-text form-control">
+                    <input type="text" id="form3" class="white-text form-control" name="nom">
                     <label for="form3" class="active">Nom d'utilisateur</label>
                   </div>
                   <div class="md-form">
                     <i class="fa fa-lock prefix white-text active"></i>
-                    <input type="password" id="form4" class="white-text form-control">
+                    <input type="password" id="form4" name="password" class="white-text form-control">
                     <label for="form4">Mot de passe</label>
                   </div>
                   <div class="text-center mt-4">

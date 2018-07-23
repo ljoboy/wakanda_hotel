@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31234e6-b8bf-4e13-b086-0c0943b9c595" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/hotel/statistiques.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/Jireh.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f968a2a9-c59f-431c-8e2f-a5ce7ff5ff0b.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Chambre.py" afterPath="$PROJECT_DIR$/Chambre.py" />
       <change beforePath="$PROJECT_DIR$/Client.py" afterPath="$PROJECT_DIR$/Client.py" />
       <change beforePath="$PROJECT_DIR$/templates/base_hotel.html" afterPath="$PROJECT_DIR$/templates/base_hotel.html" />
+      <change beforePath="$PROJECT_DIR$/templates/hotel.html" afterPath="$PROJECT_DIR$/templates/hotel.html" />
+      <change beforePath="$PROJECT_DIR$/templates/hotel/add_client.html" afterPath="$PROJECT_DIR$/templates/hotel/add_client.html" />
       <change beforePath="$PROJECT_DIR$/templates/hotel/reservation.html" afterPath="$PROJECT_DIR$/templates/hotel/reservation.html" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/team.html" afterPath="$PROJECT_DIR$/templates/team.html" />
       <change beforePath="$PROJECT_DIR$/wakanda.py" afterPath="$PROJECT_DIR$/wakanda.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +28,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/_$Chambre.coverage" NAME="Chambre Coverage Results" MODIFIED="1530754241733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/_$Chambre.coverage" NAME="Chambre Coverage Results" MODIFIED="1530754241733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:" />
+    <SUITE FILE_PATH="coverage/Jireh$fontion.coverage" NAME="fontion Coverage Results" MODIFIED="1531716629205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_$wakanda.coverage" NAME="wakanda Coverage Results" MODIFIED="1530756302992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Jireh$Chambre__1_.coverage" NAME="Chambre (1) Coverage Results" MODIFIED="1531727155987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Jireh$Client.coverage" NAME="Client Coverage Results" MODIFIED="1530579818614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Jireh$wakanda.coverage" NAME="wakanda Coverage Results" MODIFIED="1530800412603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Wakanda$Wakanda.coverage" NAME="Wakanda Coverage Results" MODIFIED="1531060365342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Jireh$wakanda.coverage" NAME="wakanda Coverage Results" MODIFIED="1531726670186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -47,20 +61,65 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="new_wakanda: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - new_wakanda@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="new_wakanda: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="reservation: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="wakanda.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wakanda.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wakanda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="-8">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
-                <element signature="e#46#105#0" expanded="true" />
-                <marker date="1530805498090" expanded="true" signature="792:949" ph="..." />
+                <element signature="e#46#114#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+              <folding>
+                <marker date="1531603231513" expanded="true" signature="424:603" ph="INSERT INTO client... " />
+                <marker date="1531603231513" expanded="true" signature="941:971" ph="SELECT * FRO... client" />
+                <marker date="1531603231513" expanded="true" signature="1156:1205" ph="SELECT * FRO... client" />
+                <marker date="1531603231513" expanded="true" signature="1420:1535" ph="SELECT * FRO... client" />
+                <marker date="1531603231513" expanded="true" signature="1846:2033" ph="UPDATE client... " />
+                <marker date="1531603231513" expanded="true" signature="2363:2383" ph="SELECT * FRO... client" />
+                <marker date="1531603231513" expanded="true" signature="2603:2650" ph="SELECT * FRO... client" />
+                <marker date="1531603231513" expanded="true" signature="2887:2935" ph="SELECT * FRO... client" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/hotel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="105" column="59" lean-forward="false" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,28 +127,55 @@
       <file leaf-file-name="reservation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hotel/reservation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="75" column="111" lean-forward="false" selection-start-line="75" selection-start-column="111" selection-end-line="75" selection-end-column="111" />
+            <state relative-caret-position="697">
+              <caret line="68" column="53" lean-forward="false" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_type.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hotel/add_type.html">
+      <file leaf-file-name="all_chambres.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/hotel/all_chambres.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="115">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hotel/add_client.html">
+      <file leaf-file-name="Chambre.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chambre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="277">
+              <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+              <folding>
+                <marker date="1531727155874" expanded="true" signature="151:220" ph="INSERT INTO chambre... " />
+                <marker date="1531727155874" expanded="true" signature="390:411" ph="SELECT * FRO... chambre" />
+                <marker date="1531727155874" expanded="true" signature="576:658" ph="SELECT * FRO... chambre" />
+                <marker date="1531727155874" expanded="true" signature="576:659" ph="SELECT c.*, chambre" />
+                <marker date="1531727155874" expanded="true" signature="576:679" ph="SELECT c.*, chambre" />
+                <marker date="1531727155874" expanded="true" signature="843:919" ph="SELECT * FRO... chambre" />
+                <marker date="1531727155874" expanded="true" signature="1093:1129" ph="SELECT * FRO... chambre" />
+                <marker date="1531727155874" expanded="true" signature="1381:1499" ph="INSERT INTO reservation... " />
+                <marker date="1531727155874" expanded="true" signature="1695:1787" ph="INSERT INTO type... " />
+                <marker date="1531727155874" expanded="true" signature="1925:1943" ph="SELECT * FRO... type" />
+                <marker date="1531727155874" expanded="true" signature="2114:2162" ph="UPDATE chambre... " />
+                <marker date="1531727155874" expanded="true" signature="2296:2344" ph="UPDATE chambre... " />
+                <marker date="1531727155874" expanded="true" signature="2465:2498" ph="SELECT SUM(P... reservation" />
+                <marker date="1531727155874" expanded="true" signature="2656:2663" ph="SELECT SUM(P... reservation" />
+                <marker date="1531727155874" expanded="true" signature="2656:2689" ph="SELECT SUM(P... reservation" />
+                <marker date="1531727155874" expanded="true" signature="2656:2771" ph="SELECT SUM(P... type" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistiques.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/hotel/statistiques.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -98,68 +184,19 @@
       <file leaf-file-name="base_hotel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base_hotel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
+            <state relative-caret-position="254">
+              <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client.py">
+      <file leaf-file-name="fontion.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1525">
-              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding>
-                <marker date="1530800398386" expanded="true" signature="424:595" ph="INSERT INTO client... " />
-                <marker date="1530800398386" expanded="true" signature="933:963" ph="SELECT * FRO... client" />
-                <marker date="1530800398386" expanded="true" signature="1148:1197" ph="SELECT * FRO... client" />
-                <marker date="1530800398386" expanded="true" signature="1412:1527" ph="SELECT * FRO... client" />
-                <marker date="1530800398386" expanded="true" signature="1838:2025" ph="UPDATE client... " />
-                <marker date="1530800398386" expanded="true" signature="2355:2375" ph="SELECT * FRO... client" />
-                <marker date="1530800398386" expanded="true" signature="2595:2642" ph="SELECT * FRO... client" />
-                <marker date="1530800398386" expanded="true" signature="2879:2927" ph="SELECT * FRO... client" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resto.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Resto.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1530567159017" expanded="true" signature="607:691" ph="INSERT INTO plats... " />
-                <marker date="1530567159017" expanded="true" signature="967:986" ph="SELECT * FRO... plats" />
-                <marker date="1530567159017" expanded="true" signature="1407:1451" ph="SELECT * FRO... plats" />
-                <marker date="1530567159017" expanded="true" signature="1933:2016" ph="INSERT INTO type... " />
-                <marker date="1530567159017" expanded="true" signature="2295:2313" ph="SELECT * FRO... type" />
-                <marker date="1530567159017" expanded="true" signature="2725:2768" ph="SELECT * FRO... type" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chambre.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chambre.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <marker date="1530779118734" expanded="true" signature="151:220" ph="INSERT INTO chambre... " />
-                <marker date="1530779118734" expanded="true" signature="390:411" ph="SELECT * FRO... chambre" />
-                <marker date="1530779118734" expanded="true" signature="576:621" ph="SELECT * FRO... chambre" />
-                <marker date="1530779118734" expanded="true" signature="785:861" ph="SELECT * FRO... chambre" />
-                <marker date="1530779118734" expanded="true" signature="1035:1071" ph="SELECT * FRO... chambre" />
-                <marker date="1530779118734" expanded="true" signature="1316:1434" ph="INSERT INTO reservation... " />
-                <marker date="1530779118734" expanded="true" signature="1630:1722" ph="INSERT INTO type... " />
-                <marker date="1530779118734" expanded="true" signature="1860:1878" ph="SELECT * FRO... type" />
-                <marker date="1530779118734" expanded="true" signature="2049:2068" ph="UPDATE chambre... " />
-                <marker date="1530779118734" expanded="true" signature="2049:2089" ph="UPDATE chambre... " />
-                <marker date="1530779118734" expanded="true" signature="2049:2097" ph="UPDATE chambre... " />
-                <marker date="1530779118734" expanded="true" signature="2214:2262" ph="UPDATE chambre... " />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,6 +221,8 @@
       <find>0</find>
       <find>client</find>
       <find>chambre</find>
+      <find>stats</find>
+      <find>rese</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,29 +313,38 @@
         <option value="$PROJECT_DIR$/views/users.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/users.html" />
-        <option value="$PROJECT_DIR$/../templates/add_chambre.html" />
-        <option value="$PROJECT_DIR$/../templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="E:/templates/add_chambre.html" />
+        <option value="E:/templates/index.html" />
         <option value="$PROJECT_DIR$/dbConnexion.py" />
-        <option value="$PROJECT_DIR$/templates/hotel/add_client.html" />
+        <option value="$PROJECT_DIR$/Client.py" />
         <option value="$PROJECT_DIR$/templates/hotel/modif_client.html" />
         <option value="$PROJECT_DIR$/templates/hotel/liste_clients.html" />
-        <option value="$PROJECT_DIR$/../templates/hotel/add_client.html" />
-        <option value="$PROJECT_DIR$/../templates/hotel/modif_client.html" />
-        <option value="$PROJECT_DIR$/../Client.py" />
-        <option value="$PROJECT_DIR$/../templates/hotel/add_chambre.html" />
-        <option value="$PROJECT_DIR$/../templates/hotel/all_chambres.html" />
-        <option value="$PROJECT_DIR$/../templates/hotel/add_type.html" />
-        <option value="$PROJECT_DIR$/../Chambre.py" />
-        <option value="$PROJECT_DIR$/../templates/hotel/all_types.html" />
-        <option value="$PROJECT_DIR$/../wakanda.py" />
-        <option value="$PROJECT_DIR$/../templates/base_hotel.html" />
-        <option value="$PROJECT_DIR$/../templates/team.html" />
-        <option value="$PROJECT_DIR$/Chambre.py" />
+        <option value="E:/templates/hotel/add_client.html" />
+        <option value="E:/templates/hotel/modif_client.html" />
+        <option value="E:/Client.py" />
+        <option value="E:/templates/hotel/add_chambre.html" />
+        <option value="E:/templates/hotel/all_chambres.html" />
+        <option value="E:/templates/hotel/add_type.html" />
+        <option value="E:/Chambre.py" />
+        <option value="E:/templates/hotel/all_types.html" />
+        <option value="E:/wakanda.py" />
+        <option value="E:/templates/base_hotel.html" />
+        <option value="E:/templates/team.html" />
+        <option value="$PROJECT_DIR$/templates/hotel.html" />
+        <option value="$PROJECT_DIR$/foncyion.py" />
+        <option value="$PROJECT_DIR$/templates/hotel/add_client.html" />
+        <option value="$PROJECT_DIR$/templates/hotel/stats.html" />
+        <option value="$PROJECT_DIR$/templates/team.html" />
+        <option value="$PROJECT_DIR$/reservation.py" />
+        <option value="$PROJECT_DIR$/templates/hotel/all_reservation.html" />
+        <option value="$PROJECT_DIR$/templates/statistiques.html" />
+        <option value="$PROJECT_DIR$/fontion.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/base_hotel.html" />
         <option value="$PROJECT_DIR$/templates/hotel/reservation.html" />
+        <option value="$PROJECT_DIR$/templates/hotel/statistiques.html" />
+        <option value="$PROJECT_DIR$/Chambre.py" />
         <option value="$PROJECT_DIR$/wakanda.py" />
-        <option value="$PROJECT_DIR$/Client.py" />
       </list>
     </option>
   </component>
@@ -310,10 +358,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1221" />
-    <option name="height" value="663" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1385" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -331,14 +379,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Jireh" type="b2602c69:ProjectViewProjectNode" />
               <item name="Jireh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jireh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jireh" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jireh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jireh" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,11 +407,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Julien/Desktop/Wakanda/templates/hotel/stats.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
@@ -376,7 +436,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.wakanda">
+  <component name="RunManager" selected="Python.Chambre (1)">
+    <configuration name="Chambre (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Wakanda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chambre.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Chambre" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,7 +468,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Jireh" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Chambre.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -408,8 +487,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Jireh" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="fontion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Wakanda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fontion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,16 +532,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.wakanda" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Client" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Chambre" />
+    <configuration name="Wakanda" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="Wakanda" />
+      <option name="target" value="$PROJECT_DIR$/wakanda.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.Client" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Chambre" />
+      <item index="2" class="java.lang.String" itemvalue="Python.wakanda" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fontion" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Chambre (1)" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.wakanda" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Chambre" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Client" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.Chambre (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.wakanda" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fontion" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Chambre" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -463,16 +579,26 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15075758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23880596" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23880596" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13560607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -483,33 +609,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16136363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -545,152 +648,242 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f968a2a9-c59f-431c-8e2f-a5ce7ff5ff0b/console.sql" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../wakanda.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/users.html" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6868e938-a141-4f61-9f2d-cf3413eec97d/console.sql">
+    <entry file="file://E:/wakanda.py" />
+    <entry file="file://E:/templates/users.html" />
+    <entry file="file://E:/dbConnexion.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6868e938-a141-4f61-9f2d-cf3413eec97d/console.sql" />
+    <entry file="file://E:/Chambre.py" />
+    <entry file="file://E:/templates/base.html" />
+    <entry file="file://E:/templates/hotel.html" />
+    <entry file="file://E:/templates/add_chambre.html" />
+    <entry file="file://E:/templates/index.html" />
+    <entry file="file://E:/Chambre.py" />
+    <entry file="file://E:/templates/base_hotel.html" />
+    <entry file="file://E:/Client.py" />
+    <entry file="file://E:/wakanda.py" />
+    <entry file="file://E:/dbConnexion.py" />
+    <entry file="file://E:/templates/index.html" />
+    <entry file="file://E:/templates/hotel/add_client.html" />
+    <entry file="file://E:/templates/hotel/modif_client.html" />
+    <entry file="file://E:/Client.py" />
+    <entry file="file://E:/templates/hotel/liste_clients.html" />
+    <entry file="file://E:/templates/hotel/add_type.html" />
+    <entry file="file://E:/templates/hotel/add_chambre.html" />
+    <entry file="file://E:/templates/hotel/all_chambres.html" />
+    <entry file="file://E:/Chambre.py" />
+    <entry file="file://E:/templates/hotel/all_types.html" />
+    <entry file="file://E:/templates/hotel.html" />
+    <entry file="file://E:/wakanda.py" />
+    <entry file="file://E:/templates/base_hotel.html" />
+    <entry file="file://E:/templates/team.html" />
+    <entry file="file://$PROJECT_DIR$/templates/hotel/add_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel/add_client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="77" lean-forward="false" selection-start-line="95" selection-start-column="77" selection-end-line="95" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_wakanda (2).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reservation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <marker date="1531603232350" expanded="true" signature="130:155" ph="SELECT * FRO... reservation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/resto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Chambre.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/base.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/add_chambre.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/../Chambre.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/base_hotel.html" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../wakanda.py" />
-    <entry file="file://$PROJECT_DIR$/../dbConnexion.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/add_client.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/modif_client.html" />
-    <entry file="file://$PROJECT_DIR$/../Client.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/liste_clients.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/add_type.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/add_chambre.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/all_chambres.html" />
-    <entry file="file://$PROJECT_DIR$/../Chambre.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel/all_types.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/hotel.html" />
-    <entry file="file://$PROJECT_DIR$/../wakanda.py" />
-    <entry file="file://$PROJECT_DIR$/../templates/base_hotel.html" />
-    <entry file="file://$PROJECT_DIR$/../templates/team.html" />
-    <entry file="file://$PROJECT_DIR$/Chambre.py">
+    <entry file="file://$PROJECT_DIR$/foncyion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <marker date="1530779118734" expanded="true" signature="151:220" ph="INSERT INTO chambre... " />
-            <marker date="1530779118734" expanded="true" signature="390:411" ph="SELECT * FRO... chambre" />
-            <marker date="1530779118734" expanded="true" signature="576:621" ph="SELECT * FRO... chambre" />
-            <marker date="1530779118734" expanded="true" signature="785:861" ph="SELECT * FRO... chambre" />
-            <marker date="1530779118734" expanded="true" signature="1035:1071" ph="SELECT * FRO... chambre" />
-            <marker date="1530779118734" expanded="true" signature="1316:1434" ph="INSERT INTO reservation... " />
-            <marker date="1530779118734" expanded="true" signature="1630:1722" ph="INSERT INTO type... " />
-            <marker date="1530779118734" expanded="true" signature="1860:1878" ph="SELECT * FRO... type" />
-            <marker date="1530779118734" expanded="true" signature="2049:2068" ph="UPDATE chambre... " />
-            <marker date="1530779118734" expanded="true" signature="2049:2089" ph="UPDATE chambre... " />
-            <marker date="1530779118734" expanded="true" signature="2049:2097" ph="UPDATE chambre... " />
-            <marker date="1530779118734" expanded="true" signature="2214:2262" ph="UPDATE chambre... " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hotel/add_client.html">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8fa0b2dc-b645-4109-80cb-63447fae89af/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel/all_reservation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel/stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1013">
+          <caret line="49" column="14" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="105" column="59" lean-forward="false" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base_hotel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="108" column="56" lean-forward="false" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="56" />
+        <state relative-caret-position="254">
+          <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hotel/add_type.html">
+    <entry file="file://$PROJECT_DIR$/fontion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wakanda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#46#105#0" expanded="true" />
-            <marker date="1530805498090" expanded="true" signature="792:949" ph="..." />
-          </folding>
+    <entry file="das://table:/58011140/8fa0b2dc-b645-4109-80cb-63447fae89af/new_wakanda.chambre">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hotel/reservation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="75" column="111" lean-forward="false" selection-start-line="75" selection-start-column="111" selection-end-line="75" selection-end-column="111" />
-          <folding />
+    <entry file="das://table:/58011140/8fa0b2dc-b645-4109-80cb-63447fae89af/new_wakanda.reservation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1525">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="138">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
           <folding>
-            <marker date="1530800398386" expanded="true" signature="424:595" ph="INSERT INTO client... " />
-            <marker date="1530800398386" expanded="true" signature="933:963" ph="SELECT * FRO... client" />
-            <marker date="1530800398386" expanded="true" signature="1148:1197" ph="SELECT * FRO... client" />
-            <marker date="1530800398386" expanded="true" signature="1412:1527" ph="SELECT * FRO... client" />
-            <marker date="1530800398386" expanded="true" signature="1838:2025" ph="UPDATE client... " />
-            <marker date="1530800398386" expanded="true" signature="2355:2375" ph="SELECT * FRO... client" />
-            <marker date="1530800398386" expanded="true" signature="2595:2642" ph="SELECT * FRO... client" />
-            <marker date="1530800398386" expanded="true" signature="2879:2927" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="424:603" ph="INSERT INTO client... " />
+            <marker date="1531603231513" expanded="true" signature="941:971" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="1156:1205" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="1420:1535" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="1846:2033" ph="UPDATE client... " />
+            <marker date="1531603231513" expanded="true" signature="2363:2383" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="2603:2650" ph="SELECT * FRO... client" />
+            <marker date="1531603231513" expanded="true" signature="2887:2935" ph="SELECT * FRO... client" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resto.py">
+    <entry file="file://$PROJECT_DIR$/templates/hotel/all_chambres.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel/reservation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="68" column="53" lean-forward="false" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hotel/statistiques.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chambre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
           <folding>
-            <marker date="1530567159017" expanded="true" signature="607:691" ph="INSERT INTO plats... " />
-            <marker date="1530567159017" expanded="true" signature="967:986" ph="SELECT * FRO... plats" />
-            <marker date="1530567159017" expanded="true" signature="1407:1451" ph="SELECT * FRO... plats" />
-            <marker date="1530567159017" expanded="true" signature="1933:2016" ph="INSERT INTO type... " />
-            <marker date="1530567159017" expanded="true" signature="2295:2313" ph="SELECT * FRO... type" />
-            <marker date="1530567159017" expanded="true" signature="2725:2768" ph="SELECT * FRO... type" />
+            <marker date="1531727155874" expanded="true" signature="151:220" ph="INSERT INTO chambre... " />
+            <marker date="1531727155874" expanded="true" signature="390:411" ph="SELECT * FRO... chambre" />
+            <marker date="1531727155874" expanded="true" signature="576:658" ph="SELECT * FRO... chambre" />
+            <marker date="1531727155874" expanded="true" signature="576:659" ph="SELECT c.*, chambre" />
+            <marker date="1531727155874" expanded="true" signature="576:679" ph="SELECT c.*, chambre" />
+            <marker date="1531727155874" expanded="true" signature="843:919" ph="SELECT * FRO... chambre" />
+            <marker date="1531727155874" expanded="true" signature="1093:1129" ph="SELECT * FRO... chambre" />
+            <marker date="1531727155874" expanded="true" signature="1381:1499" ph="INSERT INTO reservation... " />
+            <marker date="1531727155874" expanded="true" signature="1695:1787" ph="INSERT INTO type... " />
+            <marker date="1531727155874" expanded="true" signature="1925:1943" ph="SELECT * FRO... type" />
+            <marker date="1531727155874" expanded="true" signature="2114:2162" ph="UPDATE chambre... " />
+            <marker date="1531727155874" expanded="true" signature="2296:2344" ph="UPDATE chambre... " />
+            <marker date="1531727155874" expanded="true" signature="2465:2498" ph="SELECT SUM(P... reservation" />
+            <marker date="1531727155874" expanded="true" signature="2656:2663" ph="SELECT SUM(P... reservation" />
+            <marker date="1531727155874" expanded="true" signature="2656:2689" ph="SELECT SUM(P... reservation" />
+            <marker date="1531727155874" expanded="true" signature="2656:2771" ph="SELECT SUM(P... type" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wakanda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#46#114#0" expanded="true" />
           </folding>
         </state>
       </provider>

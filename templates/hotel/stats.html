@@ -1,0 +1,50 @@
+{% extends "base_hotel.html" %}
+{% block title %}Hotel{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+</style>
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<div class="container">
+		<h1>Bienvenue chez WAKANDA HOTEL</h1>
+		<canvas id="myChart"></canvas>
+	</div>
+</div>
+    {% block script %}
+        <script>
+        var myLineChart = new Chart(ctx).Line(data, option);
+        var data = {
+    labels: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+        }
+    ]
+};
+        $(function () {
+    // Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myLineChart = new Chart(ctx).Line(data, option); //'Line' defines type of the chart.
+});
+        </script>
+    {% endblock %}
+{% endblock %}

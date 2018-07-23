@@ -6,7 +6,7 @@
 {% block body %}
     <!--Form with header-->
     <div class="jumbotron">
-            <form action="/hotel/add_client" method="post" accept-charset="UTF-8">
+            <form action="{{ url_for('add_client') }}" method="post" accept-charset="UTF-8">
             <div class="card">
             <div class="card-block">
                 <!--Header-->
